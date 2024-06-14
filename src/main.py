@@ -1,5 +1,6 @@
-# Progmod Eksamen 14/06/2024
-# Rakettdata for sammenligning: https://wiki.openrocket.info/Advanced_Flight_Simulation
+__author__ = "Johannes Aamot-Skeidsvoll"
+__licence__ = "MIT"
+
 import logging
 
 import matplotlib.pyplot as plt
@@ -17,6 +18,7 @@ logger.setLevel(logging.DEBUG)
 
 
 def plot_data(data) -> None:
+    # Rakettdata for sammenligning: https://wiki.openrocket.info/Advanced_Flight_Simulation
     sns.lineplot(data=data, x="Time (s) Auto", y="Force (N) Run #1", label="Rakettmotorkraft")
     plt.xlabel("Tid ($s$)")
     plt.ylabel("Kraft ($N$)")

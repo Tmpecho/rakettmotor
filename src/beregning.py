@@ -5,6 +5,7 @@ import pandas as pd
 
 from config.konstanter import Konstanter
 
+
 logger = logging.getLogger(__name__)
 
 
